@@ -5,7 +5,6 @@ package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 require("./bot/utils")
 
 VERSION = '0.14.6'
-
 -- This function is called when tg receive a msg
 function on_msg_receive (msg)
   if not started then
@@ -69,7 +68,7 @@ function msg_valid(msg)
   end
 
   if msg.from.id == our_id then
-    print('\27[36mNot valid: Msg from our id\27[39m')
+    print('\27[36mNot valid: Msg from 138249119\27[39m')
     return false
   end
 
